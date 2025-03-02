@@ -3,6 +3,8 @@
 
 library(tidyverse)
 library(Seurat)
+library(SingleR)
+library(celldex)
 
 load("spleen.naive.seurat")
 DimPlot(spleen.naive.seurat, reduction = "umap", split.by = "orig.ident", label = TRUE)
